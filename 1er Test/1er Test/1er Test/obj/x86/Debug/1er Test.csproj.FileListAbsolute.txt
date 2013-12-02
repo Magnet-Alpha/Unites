@@ -1,0 +1,6 @@
+c:\users\guillaume\documents\visual studio 2010\Projects\1er Test\1er Test\1er Test\bin\x86\Debug\1er Test.exe
+c:\users\guillaume\documents\visual studio 2010\Projects\1er Test\1er Test\1er Test\bin\x86\Debug\1er Test.pdb
+c:\users\guillaume\documents\visual studio 2010\Projects\1er Test\1er Test\1er Test\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\guillaume\documents\visual studio 2010\Projects\1er Test\1er Test\1er Test\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+c:\users\guillaume\documents\visual studio 2010\Projects\1er Test\1er Test\1er Test\obj\x86\Debug\1er Test.exe
+c:\users\guillaume\documents\visual studio 2010\Projects\1er Test\1er Test\1er Test\obj\x86\Debug\1er Test.pdb
