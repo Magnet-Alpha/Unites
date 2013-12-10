@@ -4,3 +4,9 @@ c:\users\guillaume\documents\visual studio 2010\Projects\1er Test\1er Test\1er T
 c:\users\guillaume\documents\visual studio 2010\Projects\1er Test\1er Test\1er Test\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
 c:\users\guillaume\documents\visual studio 2010\Projects\1er Test\1er Test\1er Test\obj\x86\Debug\1er Test.exe
 c:\users\guillaume\documents\visual studio 2010\Projects\1er Test\1er Test\1er Test\obj\x86\Debug\1er Test.pdb
+C:\Users\epita\Documents\GitHub\Unites\1er Test\1er Test\1er Test\obj\x86\Debug\1er Test.csprojResolveAssemblyReference.cache
+C:\Users\epita\Documents\GitHub\Unites\1er Test\1er Test\1er Test\obj\x86\Debug\Microsoft.Xna.Framework.RuntimeProfile.txt
+C:\Users\epita\Documents\GitHub\Unites\1er Test\1er Test\1er Test\obj\x86\Debug\1er Test.exe
+C:\Users\epita\Documents\GitHub\Unites\1er Test\1er Test\1er Test\obj\x86\Debug\1er Test.pdb
+C:\Users\epita\Documents\GitHub\Unites\1er Test\1er Test\1er Test\bin\x86\Debug\1er Test.exe
+C:\Users\epita\Documents\GitHub\Unites\1er Test\1er Test\1er Test\bin\x86\Debug\1er Test.pdb

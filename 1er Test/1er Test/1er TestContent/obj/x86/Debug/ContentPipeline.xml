@@ -7,15 +7,15 @@
       <TargetProfile>HiDef</TargetProfile>
       <BuildConfiguration>Debug</BuildConfiguration>
       <CompressContent>false</CompressContent>
-      <RootDirectory>c:\users\guillaume\documents\visual studio 2010\Projects\1er Test\1er Test\1er TestContent\</RootDirectory>
-      <LoggerRootDirectory>c:\users\guillaume\documents\visual studio 2010\Projects\1er Test\1er Test\1er Test\</LoggerRootDirectory>
-      <IntermediateDirectory>c:\users\guillaume\documents\visual studio 2010\Projects\1er Test\1er Test\1er TestContent\obj\x86\Debug\</IntermediateDirectory>
-      <OutputDirectory>c:\users\guillaume\documents\visual studio 2010\Projects\1er Test\1er Test\1er Test\bin\x86\Debug\Content\</OutputDirectory>
+      <RootDirectory>C:\Users\epita\Documents\GitHub\Unites\1er Test\1er Test\1er TestContent\</RootDirectory>
+      <LoggerRootDirectory>C:\Users\epita\Documents\GitHub\Unites\1er Test\1er Test\1er Test\</LoggerRootDirectory>
+      <IntermediateDirectory>C:\Users\epita\Documents\GitHub\Unites\1er Test\1er Test\1er TestContent\obj\x86\Debug\</IntermediateDirectory>
+      <OutputDirectory>C:\Users\epita\Documents\GitHub\Unites\1er Test\1er Test\1er Test\bin\x86\Debug\Content\</OutputDirectory>
     </Settings>
     <Assemblies>
       <Assembly>
         <Key>C:\Windows\Microsoft.Net\assembly\GAC_32\Microsoft.Xna.Framework.Content.Pipeline\v4.0_4.0.0.0__842cf8be1de50553\Microsoft.Xna.Framework.Content.Pipeline.dll</Key>
-        <Value>2013-12-01T01:33:49.7718597+01:00</Value>
+        <Value>2011-08-03T17:33:58.6222029+02:00</Value>
       </Assembly>
     </Assemblies>
   </Asset>

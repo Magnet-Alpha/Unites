@@ -18,7 +18,6 @@ namespace _1er_Test
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
-        public List<Unite> virus = new List<Unite>();
 
         public Game1()
         {
@@ -83,7 +82,7 @@ namespace _1er_Test
         protected override void Draw(GameTime gameTime)
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
-
+            spriteBatch.Begin();
             // TODO: Add your drawing code here
 
             base.Draw(gameTime);

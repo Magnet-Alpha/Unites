@@ -17,7 +17,7 @@ namespace _1er_Test
         protected Unite target;                                //Target of the tower
         public List<Unite> virus = new List<Unite>();
         protected float Range { get; set; }                    //Range of attack of the tower
-        public override string State
+        public override Etat State
         {
             get
             {
@@ -26,23 +26,31 @@ namespace _1er_Test
             set
             {
                 if (this.Hp <= 0)
-                    this.State = "Dead";
+                    this.State = Etat.Dead;
                 foreach (Unite unite in virus)
                 {
-                    if (Vector2.Distance(this.Position, unite.Position) <= Range & this.State == "Alive")
+                    if (Vector2.Distance(this.Position, unite.Position) <= Range & this.State == Etat.Alive)
                     {
                         this.target = unite;
-                        this.State = "Attack";
+                        this.State = Etat.Attack;
                         break;
                     }
                     else
-                        this.State = "Alive";
+                        this.State = Etat.Alive;
                 }
             }
         }
-        public Tower(string name, int hp, int attack, Vector2 position, float range) : base(name, hp, attack, position)
+        public Tower(string name, int hp, int attack, int cooldown, Vector2 position, float range) : base(name, hp, attack, cooldown, position)
         {
             this.Range = range;
+        }
+        public void Attacking()
+        {
+            if (this.State == Etat.Attack & this.Cooldown <= 0)
+            {
+                this.Cooldown = this.basecooldown;
+                target.Hp = target.Hp - this.Attack;
+            }
         }
     }
 }
