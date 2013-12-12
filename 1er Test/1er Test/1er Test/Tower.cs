@@ -16,31 +16,31 @@ namespace _1er_Test
     {
         protected Unite target;                                //Target of the tower
         public List<Unite> virus = new List<Unite>();
-        protected float Range { get; set; }                    //Range of attack of the tower
+        protected double Range { get; set; }                    //Range of attack of the tower
         public override Etat State
         {
             get
             {
-                return base.State;
+                return this.etat;
             }
             set
             {
                 if (this.Hp <= 0)
-                    this.State = Etat.Dead;
+                    this.etat = Etat.Dead;
                 foreach (Unite unite in virus)
                 {
                     if (Vector2.Distance(this.Position, unite.Position) <= Range & this.State == Etat.Alive)
                     {
                         this.target = unite;
-                        this.State = Etat.Attack;
+                        this.etat = Etat.Attack;
                         break;
                     }
                     else
-                        this.State = Etat.Alive;
+                        this.etat = Etat.Alive;
                 }
             }
         }
-        public Tower(string name, int hp, int attack, int cooldown, Vector2 position, float range) : base(name, hp, attack, cooldown, position)
+        public Tower(string name, int hp, int attack, int cooldown, Vector2 position, double range) : base(name, hp, attack, cooldown, position)
         {
             this.Range = range;
         }

@@ -31,19 +31,20 @@ namespace _1er_Test
         public int Cooldown { get; set; }                   //Actual unit cooldown before attacking again
         public Vector2 Position { get; set; }               //Actual position of the unit
         public Vector2 Moving;                              //Actual direction of the unit
+        protected Etat etat;
         public virtual Etat State                           //State of the unit (Walking/Attacking/Dead)
         { 
             get
             {
-                return this.State;
+                return this.etat;
             }
 
             set
             {
                 if (this.Hp <= 0)
-                    this.State = Etat.Dead;
+                    this.etat = Etat.Dead;
                 else
-                    this.State = Etat.Alive;
+                    this.etat = Etat.Alive;
             }
         
         }

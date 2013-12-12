@@ -10,3 +10,6 @@ C:\Users\epita\Documents\GitHub\Unites\1er Test\1er Test\1er Test\obj\x86\Debug\
 C:\Users\epita\Documents\GitHub\Unites\1er Test\1er Test\1er Test\obj\x86\Debug\1er Test.pdb
 C:\Users\epita\Documents\GitHub\Unites\1er Test\1er Test\1er Test\bin\x86\Debug\1er Test.exe
 C:\Users\epita\Documents\GitHub\Unites\1er Test\1er Test\1er Test\bin\x86\Debug\1er Test.pdb
+C:\Users\epita\Documents\GitHub\Unites\1er Test\1er Test\1er Test\bin\x86\Debug\Content\test attack 1.xnb
+C:\Users\epita\Documents\GitHub\Unites\1er Test\1er Test\1er Test\bin\x86\Debug\Content\test dead 1.xnb
+C:\Users\epita\Documents\GitHub\Unites\1er Test\1er Test\1er Test\bin\x86\Debug\Content\test wait 1.xnb

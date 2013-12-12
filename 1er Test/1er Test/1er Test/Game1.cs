@@ -18,6 +18,8 @@ namespace _1er_Test
     {
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
+        Virus test;
+        Vector2 v = new Vector2(0, 0);
 
         public Game1()
         {
@@ -46,7 +48,7 @@ namespace _1er_Test
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-
+            test = new Virus("test", 10, 10, 5, v, 10.0, Content, spriteBatch, Unite.Etat.Dead);
             // TODO: use this.Content to load your game content here
         }
 
@@ -83,6 +85,8 @@ namespace _1er_Test
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
             spriteBatch.Begin();
+            test.StateDraw();
+            spriteBatch.End();
             // TODO: Add your drawing code here
 
             base.Draw(gameTime);

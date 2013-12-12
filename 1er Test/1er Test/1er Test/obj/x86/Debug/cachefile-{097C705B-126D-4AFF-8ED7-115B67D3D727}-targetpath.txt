@@ -1,0 +1,3 @@
+Content\test attack 1.xnb
+Content\test dead 1.xnb
+Content\test wait 1.xnb
