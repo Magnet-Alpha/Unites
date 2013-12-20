@@ -19,7 +19,10 @@ namespace _1er_Test
         GraphicsDeviceManager graphics;
         SpriteBatch spriteBatch;
         Virus test;
+        Tower test2;
         Vector2 v = new Vector2(0, 0);
+        Vector2 v2 = new Vector2(100, 50);
+        List<Unite> virus = new List<Unite>();
 
         public Game1()
         {
@@ -48,7 +51,9 @@ namespace _1er_Test
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            test = new Virus("test", 10, 10, 5, v, 10.0, Content, spriteBatch, Unite.Etat.Dead);
+            test = new Virus("b", 10, 10, 5, v, 1, Content, spriteBatch, Unite.Etat.Alive);
+            test2 = new Tower("a", 10, 10, 5, v2, 100, Content, spriteBatch, Unite.Etat.Alive);
+            virus.Add(test);
             // TODO: use this.Content to load your game content here
         }
 
@@ -71,9 +76,10 @@ namespace _1er_Test
             // Allows the game to exit
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
-
+            test.NewPosition();
             // TODO: Add your update logic here
-
+            test2.Virusing(virus);
+            test2.Stating();
             base.Update(gameTime);
         }
 
@@ -86,6 +92,7 @@ namespace _1er_Test
             GraphicsDevice.Clear(Color.CornflowerBlue);
             spriteBatch.Begin();
             test.StateDraw();
+            test2.StateDraw();
             spriteBatch.End();
             // TODO: Add your drawing code here
 

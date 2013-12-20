@@ -2,31 +2,58 @@
 <XnaContent xmlns:Pipeline="Microsoft.Xna.Framework.Content.Pipeline">
   <Asset Type="Pipeline:BuildItemCollection">
     <Item>
-      <Source>test attack 1.png</Source>
-      <Name>test attack 1</Name>
+      <Source>test attack 1a.png</Source>
+      <Name>test attack 1a</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\epita\Documents\GitHub\Unites\1er Test\1er Test\1er Test\bin\x86\Debug\Content\test attack 1.xnb</Output>
+      <Output>C:\Users\epita\Documents\GitHub\Unites\1er Test\1er Test\1er Test\bin\x86\Debug\Content\test attack 1a.xnb</Output>
       <Time>2013-12-10T14:17:38.9730763+01:00</Time>
     </Item>
     <Item>
-      <Source>test dead 1.png</Source>
-      <Name>test dead 1</Name>
+      <Source>test attack 1b.png</Source>
+      <Name>test attack 1b</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\epita\Documents\GitHub\Unites\1er Test\1er Test\1er Test\bin\x86\Debug\Content\test dead 1.xnb</Output>
+      <Output>C:\Users\epita\Documents\GitHub\Unites\1er Test\1er Test\1er Test\bin\x86\Debug\Content\test attack 1b.xnb</Output>
+      <Time>2013-12-13T12:29:15.4407106+01:00</Time>
+    </Item>
+    <Item>
+      <Source>test dead 1a.png</Source>
+      <Name>test dead 1a</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\epita\Documents\GitHub\Unites\1er Test\1er Test\1er Test\bin\x86\Debug\Content\test dead 1a.xnb</Output>
       <Time>2013-12-10T14:18:17.2231298+01:00</Time>
     </Item>
     <Item>
-      <Source>test wait 1.png</Source>
-      <Name>test wait 1</Name>
+      <Source>test dead 1b.png</Source>
+      <Name>test dead 1b</Name>
       <Importer>TextureImporter</Importer>
       <Processor>TextureProcessor</Processor>
       <Options>None</Options>
-      <Output>C:\Users\epita\Documents\GitHub\Unites\1er Test\1er Test\1er Test\bin\x86\Debug\Content\test wait 1.xnb</Output>
+      <Output>C:\Users\epita\Documents\GitHub\Unites\1er Test\1er Test\1er Test\bin\x86\Debug\Content\test dead 1b.xnb</Output>
+      <Time>2013-12-13T12:30:22.8165643+01:00</Time>
+    </Item>
+    <Item>
+      <Source>test wait 1a.png</Source>
+      <Name>test wait 1a</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\epita\Documents\GitHub\Unites\1er Test\1er Test\1er Test\bin\x86\Debug\Content\test wait 1a.xnb</Output>
       <Time>2013-12-10T14:17:05.9745693+01:00</Time>
+    </Item>
+    <Item>
+      <Source>test wait 1b.png</Source>
+      <Name>test wait 1b</Name>
+      <Importer>TextureImporter</Importer>
+      <Processor>TextureProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\epita\Documents\GitHub\Unites\1er Test\1er Test\1er Test\bin\x86\Debug\Content\test wait 1b.xnb</Output>
+      <Time>2013-12-13T12:31:02.6808444+01:00</Time>
     </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>

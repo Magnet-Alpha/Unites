@@ -14,8 +14,8 @@ namespace _1er_Test
 {
     class Tower : Unite
     {
+        private List<Unite> virus;
         protected Unite target;                                //Target of the tower
-        public List<Unite> virus = new List<Unite>();
         protected double Range { get; set; }                    //Range of attack of the tower
         public override Etat State
         {
@@ -25,22 +25,10 @@ namespace _1er_Test
             }
             set
             {
-                if (this.Hp <= 0)
-                    this.etat = Etat.Dead;
-                foreach (Unite unite in virus)
-                {
-                    if (Vector2.Distance(this.Position, unite.Position) <= Range & this.State == Etat.Alive)
-                    {
-                        this.target = unite;
-                        this.etat = Etat.Attack;
-                        break;
-                    }
-                    else
-                        this.etat = Etat.Alive;
-                }
+                this.etat = value;
             }
         }
-        public Tower(string name, int hp, int attack, int cooldown, Vector2 position, double range) : base(name, hp, attack, cooldown, position)
+        public Tower(string name, int hp, int attack, int cooldown, Vector2 position, double range, ContentManager content, SpriteBatch sb, Etat e) : base(name, hp, attack, cooldown, position, content, sb, e)
         {
             this.Range = range;
         }
@@ -51,6 +39,26 @@ namespace _1er_Test
                 this.Cooldown = this.basecooldown;
                 target.Hp = target.Hp - this.Attack;
             }
+        }
+        public void Stating()
+        {
+            if (this.Hp <= 0)
+                this.etat = Etat.Dead;
+            foreach (Unite unite in virus)
+            {
+                if (Vector2.Distance(this.Position, unite.Position) <= Range && (this.State == Etat.Alive || this.State == Etat.Attack))
+                {
+                    this.target = unite;
+                    this.etat = Etat.Attack;
+                    break;
+                }
+                else
+                    this.etat = Etat.Alive;
+            }
+        }
+        public void Virusing(List<Unite> n)
+        {
+            this.virus = n;
         }
     }
 }
