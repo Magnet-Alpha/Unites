@@ -78,8 +78,7 @@ namespace _1er_Test
                 this.Exit();
             test.NewPosition();
             // TODO: Add your update logic here
-            test2.Virusing(virus);
-            test2.Stating();
+            test2.Stating(virus);
             base.Update(gameTime);
         }
 

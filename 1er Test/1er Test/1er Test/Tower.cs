@@ -14,7 +14,6 @@ namespace _1er_Test
 {
     class Tower : Unite
     {
-        private List<Unite> virus;
         protected Unite target;                                //Target of the tower
         protected double Range { get; set; }                    //Range of attack of the tower
         public override Etat State
@@ -40,7 +39,7 @@ namespace _1er_Test
                 target.Hp = target.Hp - this.Attack;
             }
         }
-        public void Stating()
+        public void Stating(List<Unite> virus)
         {
             if (this.Hp <= 0)
                 this.etat = Etat.Dead;
@@ -55,10 +54,6 @@ namespace _1er_Test
                 else
                     this.etat = Etat.Alive;
             }
-        }
-        public void Virusing(List<Unite> n)
-        {
-            this.virus = n;
         }
     }
 }
