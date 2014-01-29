@@ -107,6 +107,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Keypoint.cs" />
     <Compile Include="Tower.cs" />
     <Compile Include="Unite.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

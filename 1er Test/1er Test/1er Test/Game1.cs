@@ -20,9 +20,14 @@ namespace _1er_Test
         SpriteBatch spriteBatch;
         Virus test;
         Tower test2;
+        Keypoint test3;
+        Keypoint test4;
+        Keypoint test5;
         Vector2 v = new Vector2(0, 0);
-        Vector2 v2 = new Vector2(100, 50);
+        Vector2 v2 = new Vector2(200, 100);
         List<Unite> virus = new List<Unite>();
+        List<Keypoint> keypoints = new List<Keypoint>();
+        List<int> indexs = new List<int>();
 
         public Game1()
         {
@@ -51,9 +56,15 @@ namespace _1er_Test
         {
             // Create a new SpriteBatch, which can be used to draw textures.
             spriteBatch = new SpriteBatch(GraphicsDevice);
-            test = new Virus("b", 10, 10, 5, v, 1, Content, spriteBatch, Unite.Etat.Alive);
-            test2 = new Tower("a", 10, 10, 5, v2, 100, Content, spriteBatch, Unite.Etat.Alive);
+            test = new Virus("b", 10, 10, 5, v, 1, Content, spriteBatch, Etat.Alive);
+            test2 = new Tower("a", 10, 10, 5, v2, 100, Content, spriteBatch, Etat.Alive);
+            test3 = new Keypoint(new Vector2(200, 0), false, false);
+            test4 = new Keypoint(new Vector2(200, 400), true, true);
+            test5 = new Keypoint(new Vector2(500, 400), true, true);
             virus.Add(test);
+            keypoints.Add(test3);
+            keypoints.Add(test4);
+            keypoints.Add(test5);
             // TODO: use this.Content to load your game content here
         }
 
@@ -76,7 +87,16 @@ namespace _1er_Test
             // Allows the game to exit
             if (GamePad.GetState(PlayerIndex.One).Buttons.Back == ButtonState.Pressed)
                 this.Exit();
-            test.NewPosition();
+            foreach (Virus v in virus)
+            {
+                v.NewPosition();
+                v.Turn(keypoints, virus, ref indexs);
+            }
+            foreach (int i in indexs)
+            {
+                virus.RemoveAt(i);
+            }
+            indexs.Clear();
             // TODO: Add your update logic here
             test2.Stating(virus);
             base.Update(gameTime);
@@ -90,7 +110,10 @@ namespace _1er_Test
         {
             GraphicsDevice.Clear(Color.CornflowerBlue);
             spriteBatch.Begin();
-            test.StateDraw();
+            foreach (Virus v in virus)
+            {
+                v.StateDraw();
+            }
             test2.StateDraw();
             spriteBatch.End();
             // TODO: Add your drawing code here

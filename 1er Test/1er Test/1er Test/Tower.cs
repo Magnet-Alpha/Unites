@@ -45,9 +45,10 @@ namespace _1er_Test
                 this.etat = Etat.Dead;
             foreach (Unite unite in virus)
             {
-                if (Vector2.Distance(this.Position, unite.Position) <= Range && (this.State == Etat.Alive || this.State == Etat.Attack))
+                if (Vector2.Distance(this.Position, unite.Position) <= Range && (this.State == Etat.Alive || this.State == Etat.Attack) && unite.State != Etat.Dead)
                 {
                     this.target = unite;
+                    unite.State = Etat.Attacked;
                     this.etat = Etat.Attack;
                     break;
                 }

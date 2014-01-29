@@ -12,16 +12,18 @@ using Microsoft.Xna.Framework.Media;
 
 namespace _1er_Test
 {
+    public enum Etat
+    {
+        Alive,
+        Attack,
+        Dead,
+        Attacked,
+        Moving
+    }
+
     class Unite                                             //In development, DO NOT EDIT WITHOUT PERMISSION
     {
-        public enum Etat
-        {
-            Alive,
-            Attack,
-            Dead,
-            Attacked,
-            Moving
-        }
+       
         protected SpriteBatch unitbatch;                    //The SpriteBatch
         public string Name { get; set; }                    //Name of the unit (type of unit)
         protected int maxhp;                                //Maximum hp, initialized at the creation of the object, cannot be changed
@@ -60,7 +62,7 @@ namespace _1er_Test
             this.Cooldown = cooldown;
             this.Position = position;
             this.State = Etat.Alive;
-            this.moving = new Vector2(1,1);
+            this.moving = new Vector2(1,0);
             this.unitbatch = sb;
             this.etat = e;
             imgs.Add(content.Load<Texture2D>("test wait 1" + this.Name));
