@@ -55,6 +55,16 @@
       <Output>C:\Users\epita\Documents\GitHub\Unites\1er Test\1er Test\1er Test\bin\x86\Debug\Content\test wait 1b.xnb</Output>
       <Time>2013-12-13T12:31:02.6808444+01:00</Time>
     </Item>
+    <Item>
+      <Source>Menu theme.mp3</Source>
+      <Name>Menu theme</Name>
+      <Importer>Mp3Importer</Importer>
+      <Processor>SongProcessor</Processor>
+      <Options>None</Options>
+      <Output>C:\Users\epita\Documents\GitHub\Unites\1er Test\1er Test\1er Test\bin\x86\Debug\Content\Menu theme.xnb</Output>
+      <Extra>C:\Users\epita\Documents\GitHub\Unites\1er Test\1er Test\1er Test\bin\x86\Debug\Content\Menu theme.wma</Extra>
+      <Time>2014-01-28T21:26:38+01:00</Time>
+    </Item>
     <BuildSuccessful>true</BuildSuccessful>
     <Settings>
       <TargetPlatform>Windows</TargetPlatform>

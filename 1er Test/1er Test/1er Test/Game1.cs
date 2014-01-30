@@ -26,8 +26,10 @@ namespace _1er_Test
         Vector2 v = new Vector2(0, 0);
         Vector2 v2 = new Vector2(200, 100);
         List<Unite> virus = new List<Unite>();
+        List<Unite> tower = new List<Unite>();
         List<Keypoint> keypoints = new List<Keypoint>();
         List<int> indexs = new List<int>();
+        private Song song;
 
         public Game1()
         {
@@ -44,7 +46,7 @@ namespace _1er_Test
         protected override void Initialize()
         {
             // TODO: Add your initialization logic here
-
+            MediaPlayer.IsRepeating = true;
             base.Initialize();
         }
 
@@ -59,12 +61,15 @@ namespace _1er_Test
             test = new Virus("b", 10, 10, 5, v, 1, Content, spriteBatch, Etat.Alive);
             test2 = new Tower("a", 10, 10, 5, v2, 100, Content, spriteBatch, Etat.Alive);
             test3 = new Keypoint(new Vector2(200, 0), false, false);
-            test4 = new Keypoint(new Vector2(200, 400), true, true);
+            test4 = new Keypoint(new Vector2(200, 400), true, false);
             test5 = new Keypoint(new Vector2(500, 400), true, true);
             virus.Add(test);
+            tower.Add(test2);
             keypoints.Add(test3);
             keypoints.Add(test4);
             keypoints.Add(test5);
+            song = Content.Load<Song>("Menu theme");
+            MediaPlayer.Play(song);
             // TODO: use this.Content to load your game content here
         }
 
@@ -98,7 +103,10 @@ namespace _1er_Test
             }
             indexs.Clear();
             // TODO: Add your update logic here
-            test2.Stating(virus);
+            foreach (Tower t in tower)
+            {
+                t.Stating(virus);
+            }
             base.Update(gameTime);
         }
 
@@ -114,7 +122,10 @@ namespace _1er_Test
             {
                 v.StateDraw();
             }
-            test2.StateDraw();
+            foreach (Tower t in tower)
+            {
+                t.StateDraw();
+            }
             spriteBatch.End();
             // TODO: Add your drawing code here
 

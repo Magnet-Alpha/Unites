@@ -16,3 +16,5 @@ C:\Users\epita\Documents\GitHub\Unites\1er Test\1er Test\1er Test\bin\x86\Debug\
 C:\Users\epita\Documents\GitHub\Unites\1er Test\1er Test\1er Test\bin\x86\Debug\Content\test dead 1b.xnb
 C:\Users\epita\Documents\GitHub\Unites\1er Test\1er Test\1er Test\bin\x86\Debug\Content\test wait 1a.xnb
 C:\Users\epita\Documents\GitHub\Unites\1er Test\1er Test\1er Test\bin\x86\Debug\Content\test wait 1b.xnb
+C:\Users\epita\Documents\GitHub\Unites\1er Test\1er Test\1er Test\bin\x86\Debug\Content\Menu theme.xnb
+C:\Users\epita\Documents\GitHub\Unites\1er Test\1er Test\1er Test\bin\x86\Debug\Content\Menu theme.wma
